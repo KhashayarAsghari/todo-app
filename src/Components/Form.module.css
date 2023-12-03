@@ -1,0 +1,73 @@
+.frmContainer { 
+    background-color: #003566;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.frmHeader {
+    color: white;
+
+}
+
+.frmDesc {
+    color: rgba(255,255,255,.6);
+
+}
+
+.frmInputContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.frmInput {
+    background-color: #2a5b89;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: white;
+    width: 100%;
+    
+    
+}
+
+.frmInput::placeholder {
+    color: rgba(255,255,255,.6);
+}
+.frmInput:focus {
+    outline: none;
+}
+
+.frmBtn {
+    background-color: #456a8c;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.frmBtn:hover {
+    background-color: #2a5b89;
+}
+
+@media (min-width: 768px){
+    .frmInputContainer {
+        flex-direction: row;
+        max-width: 700px;
+    }
+
+    .frmBtn {
+        width: auto;
+    }
+
+    
+}
